@@ -1,0 +1,171 @@
+.header {
+    display: flex ; 
+    align-items: center ;
+    background-color: black ;
+    height :100px ;  
+    gap : 462px ;
+    border-bottom-left-radius : 11% ; 
+    border-top-right-radius:  11% ;
+}
+
+
+.header .text {
+    color : white ; 
+    font-family: 'Courier New', Courier, monospace;
+    
+
+}
+
+
+.header img { 
+    height : 97px ;
+    border-radius: 50% ;
+    
+}
+
+
+.header .logo img {
+    height : 97px ; 
+    border-radius:  0% ;
+    border-bottom-left-radius: 30%;
+}
+
+
+body {
+    background-color: rgb(234, 241, 241);
+}
+
+
+
+.container {
+    display : flex ;
+    justify-content: center;
+    flex-direction : column ; 
+    width:auto ;
+    height: 655px;
+    background-color:rgb(234, 241, 241);
+    justify-content: flex-end ;
+    gap : 30px ; 
+    align-items: center ;
+}
+
+.buttons  {
+    display : flex ; 
+    gap : 227px ;
+    margin-bottom: 10px ; 
+    justify-content: space-evenly;
+
+}
+
+.btn{
+     height : 90px ; 
+     width : 90px ; 
+     border-radius : 50% ; 
+     font-size: large;
+     font-weight: bold ;
+     background-color: rgb(234, 241, 241);
+     cursor: pointer;
+}
+
+.btn img{
+    width : 80px; 
+    height : 90px ; 
+    border-radius : 50% ;
+}
+
+
+.Res {
+    display : flex ; 
+    font-weight: bold ;
+    font-size: 25px;
+    height: 122px ;
+    align-items: center ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
+
+
+.container .allRes .player  {
+    box-sizing: border-box ;
+    border : 1px solid black ;
+    font-weight: bold ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    height: 38px ;
+    width : 100px ; 
+    text-align: center ;
+    padding-top: 10px ;
+    position: relative;
+    left : 25px ;
+    background-color: black; 
+    color :rgb(234, 241, 2);
+    border-radius: 10% ;
+    
+}
+
+
+.container .allRes .computer {
+    box-sizing: border-box ;
+    border : 1px solid black ;
+    font-weight: bold ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    height: 38px ;
+    width : 100px ; 
+    text-align: center ;
+    padding-top: 10px ;
+    position: relative;
+    right: 25px ; 
+    background-color: black; 
+    color :rgb(234, 241, 2);
+    padding-top: 10px ;
+}
+
+
+
+.container .allRes .counter {
+    display : flex ; 
+    align-items: center ;
+    justify-content: center ;
+    height: 110px ; 
+    width : 390px ; 
+    border : 2px solid black  ;
+    font-weight: bold;
+    font-size: 25px ;
+}
+
+
+
+
+
+
+.allRes {
+    display : flex ; 
+    justify-content: center;
+    align-items: center ;
+    
+}
+
+
+.container #playerChoice , .container #computerChoice {
+    font-weight: bold ;
+    font-size: 25px ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+#playagain{
+    
+    box-sizing: border-box ;
+    border : 1px solid black ;
+    font-weight: bold ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    height: 38px ;
+    width : 100px ; 
+    text-align: center ; 
+ 
+    background-color: black; 
+    color :rgb(234, 241, 2);
+    border-radius: 10% ;
+     
+
+}

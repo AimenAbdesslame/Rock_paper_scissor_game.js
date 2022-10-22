@@ -3,72 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = 'style.css'>
+    <title>rock_paper_scissor_game</title>
 </head>
 <body>
-    <script>
-        // function get the random choice of computer : 
-        function getComputerChoice(){
-            let Choice = Math.floor(Math.random() * 3) + 1 ; // give a random number between 1 and 3 
-            if (Choice === 1) {
-                return "Rock" ;
-            }else if (Choice === 2 ){
-                return "Paper" ; 
-            }else {
-                return "Scissor" ; 
-            }
-        }
-
-        // function play one single round :
-        function playRound (playerSelection , computerSelection){
-            let NewplayerSelection = playerSelection[0].toUpperCase() + playerSelection.slice(1).toLowerCase()  ; 
-            if ((NewplayerSelection === "Rock" && computerSelection === "Scissor") || (NewplayerSelection === "Paper" && computerSelection === "Rock") || (NewplayerSelection === "Scissor" && computerSelection === "Paper")) {
-                return ("You win " + NewplayerSelection + " beats " + computerSelection ) ;
-            } else if (NewplayerSelection === computerSelection ) {
-                return("Tie " + NewplayerSelection + " = " +computerSelection) ;
-            } else  {
-                return("You lose " + computerSelection + " beats " + NewplayerSelection ) ;   
-            }
-        }
-
-
-        // function game repeat 5 times : 
-        function game() {
-            let counter = 0 ; 
-            let counterInv = 0 ;
-            for (let i = 0; i < 5 ; i++ ) {  
-                const computerSelection = getComputerChoice() ; 
-                const playerSelection = prompt("Enter a choice : ") ;
-                console.log("Choice of computer : "+ computerSelection) ;
-                console.log("Your Choice        : "+ playerSelection  ) ;
-                let playRounde = playRound(playerSelection , computerSelection); 
-                if (playRounde[4] === "w"){
-                    counter++ ;
-                }
-                if (playRounde[4] === "l"){
-                    counterInv++ ; 
-                }
-            }
-            if (counter > counterInv){
-                console.log("YOU Win") ; 
-            }else if (counter < counterInv) {
-                console.log("you lose!") ;
-            }else {
-                console.log("Tie");
-            }
-
-        }
-
-
-
-
+    <header class = "header ">
+        <logo class = logo> <img src = 'https://tse2.mm.bing.net/th?id=OIP.zo-yB9BpQNnBQvKBBbNQTQAAAA&pid=Api&P=0'> </logo>
+        <h1 class = "text"> Rock Paper Scissor Game </h1>
         
-       
-        game();
+    </header>
 
 
-       
-    </script>
+    <div class = "container">
+
+      <div id= "allResults" class = "allRes">
+        <div id = "playerChoice"></div>
+        <div class = "player" >Player</div>
+        <div class = "counter">
+            <div id= "playerCounter">0</div>
+            <div>:</div>
+            <div id = "computerCounter">0</div>
+        </div>
+        <div class = "computer">Computer</div>
+        <div id = "computerChoice"></div>
+
+      </div>
+      
+
+      <div id = "results" class = "Res"></div>
+
+      <div class = "buttons">
+        <button id="rock" class = "btn">R</button>
+        <button id="paper" class = "btn">P</button>
+        <button id="scissor" class = btn >S</button>
+      </div>
+
+      <button id = "playagain"> Playagain </button>
+    </div>
+
+
+    <script src = "index.js"></script>
 </body>
 </html>
